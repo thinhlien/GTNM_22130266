@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Ceevee - Free Responsive HTML5/CSS3 Template</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+   <style>
+      td>button {
+          margin: 2px 6px 2px 6px;
+
+          box-sizing: border-box;
+          width: 48%;
+          display: inline;
+      }
+
+      table {
+          border-collapse: collapse;
+          width: 100%;
+      }
+
+      th,
+      td {
+          border: 1px solid #ddd;
+          padding: 5px;
+          text-align: left;
+          color: black;
+      }
+
+      td {
+          color: aqua;
+      }
+
+      th {
+          background-color: white;
+          border: 3px solid black;
+          font-weight: bolder;
+
+      }
+
+      label {
+          color: antiquewhite;
+      }
+
+      .pag {
+          color: bisque;
+          margin: 0;
+      }
+
+      .pag:hover {
+          color: #F06000;
+      }
+  </style>
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="" href="about.html">About</a></li>
+            <li class=""><a style="color: #ffffff;" class="" href="lab5.html">Lab5</a></li>
+            <li><a class="" href="lab6.html">Lab6</a></li>
+            <li><a style="color: #ffffff;" class="" href="lab7.html">Lab7 </a></li>
+	         <!-- <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+            <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li> -->
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">I'm Thinh Lien.</h1>
+            <h3>Tôi là một sinh viên có niềm đam mê lớn với việc code. Tôi có mong muốn sẽ giúp ích được cho xã hội với đam mê của mình</h3>
+            <hr />
+            <ul class="social">
+               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+         </div>
+      </div>
+
+     
+
+   </header> <!-- Header End -->
+
+
+   
+
+
+   <!-- Resume Section
+   ================================================== -->
+ 
+   <div id="MyContainer" style="color: white; height: 500px; box-sizing: border-box; padding: 30px;">
+
+      <div class="bar black">
+          <button class="bar-item buttuon" onclick="openTab('Requirement')">Requirement</button>
+          <button class="bar-item buttuon" onclick="openTab('Tab-design')">Tab-design</button>
+          <button class="bar-item buttuon" onclick="openTab('implement')">Implement</button>
+      </div>
+
+      <!-- /////////////////////////////////////// -->
+      <div id="implement" class="lab4 MyContainer" style="display:none; height: 1100PX;">
+
+
+          <h1 style="color: antiquewhite;">Quản lý Sinh viên</h1>
+
+          <!-- Form thêm Sinh viên -->
+          <form style="margin-bottom: 20px; color: aqua;" id="studentForm">
+              <label for="fullName">Họ tên:</label>
+              <input type="text" id="fullName" required>
+
+              <label for="className">Lớp:</label>
+              <input type="text" id="className" required>
+
+              <label for="gmail">Gmail:</label>
+              <input type="email" id="gmail" required>
+
+              <button type="button" onclick="addStudent()">Thêm</button>
+          </form>
+
+          <!-- Danh sách Sinh viên -->
+          <label style="margin-top: 9px;" for="search">Tìm kiếm:</label>
+          <input type="text" id="search" oninput="searchFunction()">
+          <table id="studentList">
+              <tr>
+                  <th>HỌ TÊN</th>
+                  <th style="background-color: wheat;">LỚP</th>
+                  <th>GMAIL</th>
+                  <th style="background-color: wheat;">THAO TÁC</th>
+              </tr>
+          </table>
+
+          <!-- Ô tìm kiếm -->
+
+
+          <!-- Include JavaScript -->
+
+      </div>
+      <!-- /////////////////////////////////////// -->
+      <div id="Requirement" class="lab4 MyContainer">
+          <p><ins>Yêu cầu: </ins><br>
+              <i>Chọn 1 đối tượng bất kì trong thực tế như giảng viên, lớp môn học,... Sau đó thiết kế chức năng Quản
+                  lý đối tượng đó trên html bao gồm các tính năng thêm, sửa, xóa, tìm kiếm cho đối tượng đó. Ví dụ,
+                  làm chức năng Quản lý Sinh viên, bao gôm tính năng thêm, sửa, xóa, tìm kiếm. Chú ý: Các thành viên
+                  trong lớp, trong nhóm không được chọn các đối tượng giống nhau.
+                  Tạo 1 menu Lab4 trên website cá nhân bao gồm các tab sau:</i><br>
+
+          <p class="pag"><b>1. Tab Requirement:</b> copy lại nội dung của phần 1 ở trên (Yêu cầu) vào đây (và trình
+              bày lại cho
+              đẹp) <br></p>
+          <p class="pag"><b>2. Tab Design:</b> để link tới các file sau đây: <br>
+              Thiết kế trên giấy (chụp lại ảnh) (có nút Download để tải ảnh về) <br>
+              Chụp lại màn hình đã thiết kế trên HTML (có nút Download và Go to Figma để link tới link Figma - share ở
+              dạng file để cô có thể coi từng thành phần) <br></p>
+          <p class="pag"><b>3. Tab Implement:</b> là trang html của chức năng Quản lý đó <br></p>
+          </p>
+      </div>
+      <!-- /////////////////////////////////////// -->
+      <div id="Tab-design" class="lab4 MyContainer" style="display:none">
+          <!-- <img id="downloadImage" src="images/myPic.jpg" style="display: none;" alt="">
+          <button style="padding: 10px;margin: 5px;color: #11ABB0;background-color: bisque; border-radius: 10%;"
+              onclick="downloadImage()">DOWNLOAD</button>
+          <a target="_blank"
+              style=" font-weight: bolder;padding: 15px;margin: 5px;background-color: bisque; border-radius: 10%;"
+              href="https://www.figma.com/file/dOAVcCuVuUUBC4pbt3bmaR/Untitled?type=design&node-id=0-1&mode=design&t=16QDdRL9Ol99RHqY-0">GO
+              TO FIGMA</a> -->
+              <table>
+                <tr>
+                    <td><img src="images/qlsv.jpg" alt=""></td>
+                    <td><img src="images/quanLiSinhVien.jpg" alt=""></td>
+                </tr>
+                <tr>
+                    <td><a href="images/qlsv.jpg" download="thietKeGiay.jpg">Download</a></td>
+                    <td><a href="https://www.figma.com/file/dOAVcCuVuUUBC4pbt3bmaR/Untitled?type=design&node-id=0-1&mode=design&t=16QDdRL9Ol99RHqY-0" >Go to figma</a></td>
+                </tr>
+              </table>
+
+      </div>
+
+  </div>
+ 
+  <script>
+      function downloadImage() {
+          // Lấy đối tượng hình ảnh
+          var image = document.getElementById("downloadImage");
+
+          // Tạo một liên kết (a) ẩn để tải xuống
+          var link = document.createElement('a');
+          link.href = image.src;
+          link.download = 'downloaded-image.jpg';
+
+          // Kích hoạt sự kiện click cho liên kết
+          var clickEvent = new MouseEvent('click', {
+              bubbles: true,
+              cancelable: true,
+              view: window
+          });
+
+          // Kích hoạt sự kiện click
+          link.dispatchEvent(clickEvent);
+      }
+  </script>
+  <script>
+      function openTab(tabName) {
+          var i;
+          var x = document.getElementsByClassName("lab4");
+          for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+          }
+          document.getElementById(tabName).style.display = "block";
+      }
+  </script>
+  <script>
+
+      function addStudent() {
+          var fullName = document.getElementById("fullName").value;
+          var className = document.getElementById("className").value;
+          var gmail = document.getElementById("gmail").value;
+
+          var studentList = document.getElementById("studentList");
+
+          var row = studentList.insertRow(-1);
+
+          var cell1 = row.insertCell(0);
+          var cell2 = row.insertCell(1);
+          var cell3 = row.insertCell(2);
+          var cell4 = row.insertCell(3);
+
+          cell1.textContent = fullName;
+          cell2.textContent = className;
+          cell3.textContent = gmail;
+
+          var editButton = document.createElement("button");
+          editButton.textContent = "Sửa";
+          editButton.onclick = function () {
+              editStudent(row);
+          };
+
+          var deleteButton = document.createElement("button");
+          deleteButton.textContent = "Xóa";
+          deleteButton.onclick = function () {
+              deleteStudent(row);
+          };
+
+          cell4.appendChild(editButton);
+          cell4.appendChild(deleteButton);
+
+          document.getElementById("studentForm").reset();
+      }
+
+      function editStudent(row) {
+          var fullName = prompt("Nhập họ và tên mới:", row.cells[0].textContent);
+          var className = prompt("Nhập lớp mới:", row.cells[1].textContent);
+          var gmail = prompt("Nhập gmail mới:", row.cells[2].textContent);
+
+          if (fullName !== null && className !== null && gmail !== null) {
+              row.cells[0].textContent = fullName;
+              row.cells[1].textContent = className;
+              row.cells[2].textContent = gmail;
+          }
+      }
+
+      function deleteStudent(row) {
+          var confirmDelete = confirm("Bạn có chắc muốn xóa sinh viên này?");
+
+          if (confirmDelete) {
+              row.remove();
+          }
+      }
+
+      function searchFunction() {
+          var searchValue = document.getElementById("search").value.toLowerCase();
+          var studentRows = document.getElementById("studentList").getElementsByTagName("tr");
+
+          for (var i = 1; i < studentRows.length; i++) {
+              var studentFullName = studentRows[i].cells[0].textContent.toLowerCase();
+              var studentClassName = studentRows[i].cells[1].textContent.toLowerCase();
+              var studentGmail = studentRows[i].cells[2].textContent.toLowerCase();
+
+              if (
+                  studentFullName.includes(searchValue) ||
+                  studentClassName.includes(searchValue) ||
+                  studentGmail.includes(searchValue)
+              ) {
+                  studentRows[i].style.display = "";
+              } else {
+                  studentRows[i].style.display = "none";
+              }
+          }
+      }
+  </script>
+
+   <!-- footer
+   ================================================== -->
+   <!-- <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2014 CeeVee</li>
+               <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>   
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> Footer End -->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>

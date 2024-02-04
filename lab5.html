@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+
+    <!--- Basic Page Needs
+   ================================================== -->
+    <meta charset="utf-8">
+    <title>ThinhLien</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- Favicons
+	================================================== -->
+    <link rel="shortcut icon" href="favicon.png">
+
+
+</head>
+
+<body>
+    <header id="home" style="height: 100px;">
+
+        <nav id="nav-wrap">
+
+            <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+            <ul id="nav" class="nav">
+                <li class=""><a style="color: #ffffff" class="" href="index.html">Home</a></li>
+                <li><a style="color: #ffffff;" class="" href="about.html">About</a></li>
+                <li class="current"><a style="color: #F06000;" class="" href="lab5.html">Lab5</a></li>
+                <li class=""><a style="color: #ffffff;" class="" href="lab6.html">Lab6</a></li>
+                <li><a style="color: #ffffff;" class="" href="lab7.html">Lab7 </a></li>
+                <!-- <li><a class="smoothscroll" href="#resume">Resume</a></li>
+                <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+                <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
+                <li><a class="smoothscroll" href="#contact">Contact</a></li> -->
+            </ul> <!-- end #nav -->
+
+        </nav> <!-- end #nav-wrap -->
+    </header> <!-- Header End -->
+
+    <div>
+        <div>
+            <h1 style="color: #fff;">User Scenario:</h1>
+            <p>Người dùng Emma muốn đăng ký thành viên trên một trang web mới để có thể truy cập nhiều tính năng và nhận
+                thông báo mới nhất từ trang. Dưới đây là một kịch bản người dùng:</p>
+            <p>1.Emma truy cập trang web mới và chọn tùy chọn "Đăng ký" từ thanh điều hướng chính.</p>
+            <p>2.Một trang đăng ký mới xuất hiện, yêu cầu Emma nhập thông tin cá nhân để tạo tài khoản.</p>
+            <p>3.Emma điền các trường thông tin như tên đầy đủ, địa chỉ email, mật khẩu mong muốn.</p>
+            <p>4.Sau khi điền thông tin, Emma nhấn vào nút "Đăng ký" để hoàn tất quá trình đăng ký.</p>
+            <p>5.Hệ thống xác nhận đăng ký thành công và chuyển hướng Emma đến trang chính với tài khoản đã đăng nhập.
+            </p>
+        </div>
+        <table>
+            <tr>
+               <td> <img src="images/figmaUser.jpg" alt=""></td>
+            </tr>
+            <tr>
+
+                <td><a href="https://www.figma.com/file/4O6nDSr6KW6S9wKeeGQXfA/Untitled?type=design&node-id=0-1&mode=design&t=1rFxJx0nXw6BajHO-0">Go to Figma</a></td>
+            </tr>
+        </table>
+        <br>
+
+        <h1 style="color: #fff;">Implement</h1>
+        <form>
+            <label style="color: #fff;" for="fullname">Họ và tên:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label style="color: #fff;" for="email">Địa chỉ Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label style="color: #fff;" for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Đăng ký</button>
+        </form>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/init.js"></script>
+
+</body>
+
+</html>
